@@ -1,0 +1,211 @@
+{
+	"info": {
+		"_postman_id": "1b9cb4cd-0941-4bc7-b760-2c0b4f878d96",
+		"name": "Harish-Notable-CRUD-in-node",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "get Note by id",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "id",
+							"value": "5d13dbf0576c69193390e5a2",
+							"type": "text",
+							"disabled": true
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:4000/notes/5d13dbf0576c69193390e5a2?",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"notes",
+						"5d13dbf0576c69193390e5a2"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "5d13dbf0576c69193390e5a2",
+							"disabled": true
+						}
+					]
+				},
+				"description": "Get note by id"
+			},
+			"response": []
+		},
+		{
+			"name": "DELETE Note by id",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "id",
+							"value": "5d13dbf0576c69193390e5a2",
+							"type": "text",
+							"disabled": true
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:4000/notes/5d13dbf0576c69193390e5a2?",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"notes",
+						"5d13dbf0576c69193390e5a2"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "5d13dbf0576c69193390e5a2",
+							"disabled": true
+						}
+					]
+				},
+				"description": "Get note by id"
+			},
+			"response": []
+		},
+		{
+			"name": "create note",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "title",
+							"value": "New note",
+							"type": "text"
+						},
+						{
+							"key": "body",
+							"value": "New note What a great Note",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:4000/notes",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"notes"
+					]
+				},
+				"description": "http://localhost:8000/notes"
+			},
+			"response": []
+		},
+		{
+			"name": "UDPATE note",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "title",
+							"value": "UPDATED New note",
+							"type": "text"
+						},
+						{
+							"key": "body",
+							"value": "UPDATED New note What a great Note",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:4000/notes/5d13df4f92fb372f7aa77ec7",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"notes",
+						"5d13df4f92fb372f7aa77ec7"
+					]
+				},
+				"description": "http://localhost:8000/notes"
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"id": "a8bf2b18-fe2e-4120-90a6-73c14d46ac91",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"id": "24f2eb08-0f11-4fb1-9d5c-71ac1360d933",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	]
+}
