@@ -1,9 +1,11 @@
 {
   "name": "node-crud-api",
   "version": "1.0.0",
-  "description": "Trying node API creation for the first time - Harish",
+  "description": "Trying node API creation for the first time - Harish adhering: https://www.freecodecamp.org/news/building-a-simple-node-js-api-in-under-30-minutes-a07ea9e390d2/",
   "main": "index.js",
-  "scripts": {    "dev": "nodemon server.js"  },
+  "scripts": {
+    "dev": "nodemon server.js"
+  },
   "keywords": [
     "Node",
     "Node-API"
